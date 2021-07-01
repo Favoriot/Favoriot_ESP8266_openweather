@@ -5,7 +5,7 @@
 
 const char* ssid = "wifi id";
 const char* password = "wifi password";
-const String myDevice = "device id"; 
+const String myDevice = "deviceDefault@favoriot"; 
 char server[] = "apiv2.favoriot.com";
 
 
@@ -96,7 +96,7 @@ void loop() {
     client.println("POST /v2/streams HTTP/1.1");
     client.println("Host: apiv2.favoriot.com");
 
-    client.println(F("apikey:favoriot API key"));  // change it!
+    client.println(F("apikey:rw-apikey/acesstoken"));  // change it!
     
     client.println("Content-Type: application/json");
     client.println("cache-control: no-cache");
